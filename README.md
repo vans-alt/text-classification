@@ -4,31 +4,34 @@
 
 This project implements a binary text classification pipeline using Hugging Face Transformers and the IMDB dataset. The goal is to fine-tune a pre-trained transformer (DistilBERT) to classify movie reviews as **positive** or **negative**.
 
-📁 Project Structure
-
+📁 text-classification/
 ├── notebooks/
-│   ├── text-classification.ipynb       # Full pipeline execution notebook   
+│   └── text_classification_pipeline.ipynb     # End-to-end pipeline in Jupyter
 │
 ├── src/
-│   ├── train_model.py                  # Model training using Hugging Face Trainer
-│   ├── data_preprocessing.py           # Text cleaning, tokenization, dataset prep
-│   ├── model_utils.py                  # Model loading/saving and pipeline use
-│   └── config.py                       # All hyperparameters and model paths
+│   ├── config.py                              # Hyperparameters & model paths
+│   ├── data_preprocessing.py                  # Data cleaning, tokenization
+│   ├── model_utils.py                         # Load/save model, pipeline logic
+│   ├── train_model.py                         # Training using HuggingFace Trainer
+│   └── __init__.py
 │
 ├── models/
-│   ├── trained_model/                  # Fine-tuned model weights
-│   ├── tokenizer/                      # Tokenizer files
-│   └── checkpoints/                    # Intermediate training checkpoints
+│   ├── trained/                               # Final fine-tuned model
+│   ├── tokenizer/                             # Tokenizer files
+│   └── checkpoints/                           # Intermediate checkpoints
 │
 ├── reports/
-│   ├── submission.md                   # Full write-up of approach & learnings
-│   ├── execution_report.md             # Execution steps + screenshots
-│   ├── evaluation_metrics.json         # Accuracy, F1, Precision, Recall
-│   └── training_curve.png              # Graph of training loss vs. eval F1
+│   ├── submission.md                          # Approach, learnings, future work
+│   ├── execution_report.md                    # CLI steps + screenshots
+│   ├── evaluation_metrics.json                # Accuracy, Precision, Recall, F1
+│   └── training_curve.png                     # Training vs. Eval F1 loss plot
 │
-├── train.py                            # Entry point to run full training
-├── requirements.txt                    # Python dependencies
-└── README.md                           # This file
+├── scripts/
+│   └── train.py                               # CLI entry point to train the model
+│
+├── requirements.txt                           # Python dependencies
+└── README.md                                   # Project overview & instructions
+
 
 
 🛠️ Setup
