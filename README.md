@@ -4,7 +4,7 @@
 
 This project implements a binary text classification pipeline using Hugging Face Transformers and the IMDB dataset. The goal is to fine-tune a pre-trained transformer (DistilBERT) to classify movie reviews as **positive** or **negative**.
 
-<pre> \```text-classification/
+<pre>text-classification/
 ├── notebooks/
 │   └── text_classification_pipeline.ipynb      # End-to-end pipeline in Jupyter
 │
@@ -31,7 +31,7 @@ This project implements a binary text classification pipeline using Hugging Face
 │
 ├── requirements.txt                            # Python dependencies
 └── README.md                                    # Project overview & instructions
- \``` </pre>
+</pre>
 
 🛠️ Setup
 
